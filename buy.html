@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="favicon/logo.jpeg" >
+    <title>Buyers page</title>
+    
+</head>
+<body>
+    <div class="head_header">
+            <div class="logo" title="Madece services logo">
+                <img src="img/logo.jpeg">
+            </div>
+            <h4>Beauty <span>corner</span></h4>
+            <div class="statement">
+                
+                <h3>Clutch <span>me</span></h3>
+            </div> 
+            <div class="instructions">
+                <button  id="dipp" onclick="dip()">Payment instructions</button>
+            </div>
+            
+           
+       </div>
+    <div class="main_by">
+        <div class="infor">
+            <p>Payment page</p>
+        </div>
+    </div>
+    <div class="page_p">
+        <form action="job.php" method="post" id="my_form" enctype="multipart/form-data">
+        <div class="main_box">
+            <div class="account_card">
+                <p>Account details</p>
+                <div class="inf">
+                <div class="info_card">
+                    <i class=" bi bi-person-fill"></i>
+                    <input type="text" name="finame" placeholder="first name" required>
+                </div>
+                <div class="info_card">
+                    <i class=" bi bi-person-fill"></i>
+                    <input type="text"  name="sename" placeholder="second name" required>
+                </div>
+                <div class="info_card">
+                    <i class=" bi bi-envelope-fill"></i>
+                    <input type="email" name="email" placeholder="email" required>
+                </div>
+                </div>
+            </div>
+            <div class="paydetails">
+                <div class="p_pp">
+                    <p>Current location</p>
+                    <input type="place" name="area" placeholder="nairobi" required>
+                    <p>Date</p>
+                <input type="Date" name="date" placeholder="" required>
+                </div>
+                <label for="Job description"></label>
+                <input type="text" name="job" placeholder="Enter Amount | product and  include your number at the end" required>
+                <input type="file" name="files" id="fileTo" multiple accept="image/*" title="Please upload your payment screenshot" onchange="preview()"> 
+                <img id="frame" src=""  style="border: 1px solid #7d6cc7;" alt="No screen uploaded" width="100px" height="100px"/>
+               <button type="submit" value="Upload" name="submit">submit</button>
+                
+            </form>
+            
+          <!--    to be used
+                <div class="pay_method">
+                    <h4>Payment method</h4>
+                    <div class="saf">
+                        <img src="img/saf.jpeg">
+                        <p>Safaricom</p>
+                    </div>
+                    <div class="airtel">
+                    <img src="img/airtel.jpeg">
+                    <p>Airtel</p>
+                    </div>
+                </div>
+                <div class="sim_instr">
+                <div class="saf_instr" id="sapp">
+                    <div class="card" >
+                         <h5>This is only for Safaricom users</h5>
+                        </div>
+                    <div class="card">
+                        <h6> Payment Number</h6>
+                    </div>
+                    <div class="card">
+                        <h2>0759532312</h2>
+                    </div>
+                    
+                </div>
+                <div class="air_instr" id="apep">
+                    <div class="card" >
+                        <h5>This is only for Airtel users</h5>
+                       </div>
+                   <div class="card">
+                       <h6> Payment Number</h6>
+                   </div>
+                   <div class="card">
+                       <h2>0735700319</h2>
+                   </div>
+                </div>
+                </div>
+                -->
+            </div>
+        </div>
+        </div>
+    <div class="main_fr">
+        <marquee>Please confirm the details before payment</marquee>
+    </div>
+
+    
+    </div>
+    <script scr="app.js"></script>
+    <script>
+        
+function preview() {
+    frame.src=URL.createObjectURL(event.target.files[0]);
+}
+    </script>
+</body>
+</html>

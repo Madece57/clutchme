@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="favicon/logo.jpeg" >
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>clutch me</title>
+
+</head>
+    
+</head>
+<body>
+    <header>
+        <div class="header_bx">
+            <nav>
+                <h4 class="logo">Clutch<span>corner</span></h4>
+                <div class="menu_hum">
+                    <ul id="menu">
+                        <li><a href="#header"><span></span><span></span><span></span>Home</a></li>
+                        <li><a href="#exp"><span></span><span></span><span></span>About</a></li>
+                        <li><a href="#services"><span></span><span></span><span></span>Product</a></li>
+                        <li><a href="#portfolio"><span></span><span></span><span></span>Portfolio</a></li>
+                        <li><a href="#pricing"><span></span><span></span><span></span>Pricing</a></li>
+                        <li><a href="#contact"><span></span><span></span><span></span>Contact</a></li>
+                    </ul>
+                    <i class="bi bi-three-dots" id="menu_btn"></i>                    
+                </div>
+
+
+            </nav>
+            
+
+            <div class="btnn">
+            <button onclick="openpopup()">Login</button>
+            
+            <button onclick="openpopdown()">Sign up</button>
+            </div>
+            <div class="content">
+                <div class="cont_bx">
+                    <h5>Hello pal<img src="img/smile.jpg" alt="smile"></h5>
+                    <h1>Welcome  To</h1>
+                    <h6>Clutch <span>Me</span></h6>
+                    <p> Carry with pride</p> 
+                    <button onclick="orderpopup()">Order service</button>
+                    
+                </div>
+            <!----------order pop---------------------------->
+            <div class="redirect">
+                <h2>Hi pal<img src="img/smile.jpg"></h2>
+                <h5>To get the services please Login or sign up first </h5>
+                <h6>Thanks!</h6>
+            </div>
+            <div class="img_bx">
+                <marquee><img src="img/logo.jpeg" alt="Madece services logo"></marquee>
+            </div>
+            <!--weather start  -->
+            <div class="weather">
+                <div class="card">
+                    <img src="img/thumb.jpg" alt="Perfect">
+                    <p>Delivery</p>
+                    <h6>100%</h6>
+                </div>
+                <div class="card">
+                    <img src="img/bulb.jpg" alt="idea">
+                    <p>Creative</p>
+                    <h6>100%</h6>
+                </div>
+                <div class="card">
+                    <img src="img/fann.png" alt="active">
+                    <P>Status</P>
+                    <h6>Active</h6>
+                </div>
+            </div>
+            </div>
+            <!-----------------------login_menu---------------------------------->
+            <div class="formm" id="popup">
+                <form action="login.php" method="post">
+                    <h2>login here</h2>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Johnmax@gmail.com" required id="uss">
+            
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placehoder="at least 6 values" required id="pass">
+                    
+                    <button class="btnnn" type="submit" name="submit">Login</button>
+                    <p class="link"> Don't have an account <br></p>
+                    <h5 ><a href="">sign up</a><span>here</span></h5>
+                    <div class="out" onclick="collapseout()">
+                        <h5>Collapse</h5>
+                     </div>
+                </form>
+                </div>
+
+                <!------------------Sign up------------------------->
+                
+                <div class="formi" id="popdown">
+                    <form action="reg.php" method="post">
+                     <h2>Sign up here</h2>
+                    
+                   
+             
+                     <label for="email">Email</label>
+                     <input type="email" name="email" placeholder="johnmax@gmail.com" required id="us">
+                    
+                     <label for="password">Password</label>
+                     <input type="password" name="password" placehoder="" required id="pas1">
+             
+                     <button class="btnn" type="submit" name="submit" onclick="validation()">Signup</button>
+                     <p class="link"> Have an account <br></p>
+                     <h5><a href="" onclick="transfer()" >login</a><span>here</span></h5>
+                     <div class="out" onclick="collapse()">
+                        <h5>Collapse</h5>
+                     </div>
+                 </form>
+                </div>
+        </div>
+    </header>  
+    <div class="skill_bx" id="exp">
+        <div class="skill_img_bx">
+            <img src="img/bs.jpg" alt="direct" class="src">
+        </div>
+        <div class="skill_cont_bx">
+            <h6>About Us</h6>
+            <h2>Why we are the best <span></span><span></span><span></span></h2>
+            <p>Ever wanted your order delivered within the shortest peroid? <br>------------------------------------------------------------------------------------------<br>Ever wanted classy clutch bags but you are on low on budget? <br>------------------------------------------------------------------------------------------<br>have you been looking for a trusted source of clutch bags?<br>------------------------------------------------------------------------------------------<br> Clutch me offers the best quality clutch bags at an affordable comrade price. We do a fast delivery as our customers are our priority. Come get served with us and enjoy the final product.</p>
+            
+            <div class="skill_progress_bar">
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>SD ||<span></span>Successfull delivery </h6>
+                        <h6>99%</h6>
+
+                    </div>
+                    <h5 class="ani ani_jss"></h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>customer satisfactory </h6>
+                        <h6>96%</h6>
+                    </div>
+                    <h5 class="ani ani_jss"></h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>Customer recommended</h6>
+                        <h6>96%</h6>
+                     </div>
+                    <h5 class="ani ani_jss"> </h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6> On time updates</h6>
+                        <h6>99%</h6>  </div>
+                    <h5 class="ani ani_jss"> </h5>
+                </div>
+                <div class="skill_progress_bar_box">
+                    <div class="lable">
+                        <h6>Quality products </h6>
+                        <h6>100%</h6>
+
+                    </div>
+                    <h5 class="ani ani_jss">
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="head">
+            <h6>In store</h6>
+            <h3>New arrivals</h3>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="cards">
+            
+            <div class="card" onclick="alert('Please login to access the product') ">
+                <img src="img/a.jpg">
+                <h6>Clutch | Queen black plain </h6>
+                <p>High quality bag for classic events and also used on offical events</p>
+           </div>
+           <div class="card" onclick="alert('Please login to access the product')">
+            <img src="img/b.jpg">
+            <h6>Clutch | Queen black spotted</h6>
+            <p>An executive product for formal meeetings and weekend vibe</p>
+       </div>
+       <div class="card" onclick="alert('Please login to access the product')">
+        <img src="img/c.jpg">
+        <h6>Clutch | Queen white plain</h6>
+        <p>Just the perfect bag for all occassions</p>
+       </div>
+       <div class="card" onclick="alert('Please login to access the product')" >
+        <img src="img/d.jpg">
+        <h6>Clutch | Queen Pink spotted</h6>
+        <p>All the princesses best choice</p>
+        </div>
+           
+        <div class="card"  onclick="alert('Please login to access the product')">
+            <img src="img/e.jpg">
+            <h6>Clutch | Queen brown leatherly</h6>
+            <p>Your formal friend that leaves your confidence unopposed</p>
+       </div>
+           <div class="card"  onclick="alert('Please login to access the product')">
+                <img src="img/f.jpg">
+                <h6>Clutch | Queen pink plain</h6>
+                <p>Your all time function friend</p>
+           </div>
+            
+        </div>
+
+    </div>
+    
+    <!-- Project Box start  
+    <div class="project" id="portfolio">
+        <div class="head">
+            <div class="l_bx">
+            <h6>Portfolio</h6>
+            <h3>latest projects</h3>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+            </div>
+            <div class="r_bx">
+                <i class="bi bi-caret-left-fill"  id="left_scroll_p"></i>
+                <i class="bi bi-caret-right-fill" id="right_scroll_p"></i>
+            </div>
+        </div>
+        <div class="cards" id="project_cards">
+            <div class="card">
+                <img src="img/madece services.jpeg">
+                <div class="cont">
+                  <h5>Graphic design</h5>
+                <p>A graphic design of our business post</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Free.png">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Youtube thumbnail on madece entertainment</p>
+                  </div>
+            </div>
+            <div class="card">
+                <video autoplay muted loop><source src="img/madece.mp4" type="video/mp4"></video>
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Our business advert video</p>
+                  </div>
+            </div>
+            <div class="card">
+                <img src="img/graphics 1.jpg">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Project post design</p>
+                  </div>
+            </div>
+            <div class="card">
+                <img src="img/graphic 2.jpg">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Regular valentines post</p>
+                  </div>
+            </div>
+            <div class="card">
+                <img src="img/ghost.png">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Our youtube thumbnail</p>
+                  </div>
+            </div>
+            <div class="card">
+                <img src="img/mdweb.png">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>Our web advert post</p>
+                  </div>
+            </div>
+            <div class="card">
+                <img src="img/thelogo.png">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>our logo design</p>
+                  </div>
+            </div>
+            <div class="card">
+                <img src="img/thesee.png">
+                <div class="cont">
+                    <h5>Graphic design</h5>
+                  <p>A youtube video thumbnail</p>
+                  </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    -->
+
+
+    
+    <!--Pricing Box Start-->
+    <div class="pricing" id="pricing">
+        <div class="head">
+            <h6>Pricing</h6>
+            <h3>Clutch price</h3>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="cards">  <div class="card">
+            <h5>Clutch | Queen black plain</h5>
+            <h2>ksh.900</h2>
+            <p>Per bag</p>
+            <h6>Massive discount will be given to people who will order 3 or more</h6>
+            <button  onclick="alert('Please login to purchase the product')">Buy Item</button>
+        </div>
+        
+        <div class="card">
+            <h5>Clutch | Queen black spotted</h5>
+            <h2>ksh.900</h2>
+            <p>Per bag </p>
+            <h6> Massive discount will be given to people who will order 3 or more</h6>
+            <button  onclick="alert('Please login to purchase the product')">Buy Item</button>
+        </div>
+
+        <div class="card">
+            <h5>Clutch | Queen white plain</h5>
+            <h2>ksh.900</h2>
+            <p>Per bag </p>
+            <h6> Massive discount will be given to people who will order 3 or more</h6>
+            <button  onclick="alert('Please login to purchase the product')">Buy Item</button>
+        </div>
+        <div class="card">
+            <h5>Clutch | Queen Pink spotted</h5>
+            <h2>ksh.900</h2>
+            <p>Per bag  </p>
+            <h6>Massive discount will be given to people who will order 3 or more</h6>
+            <button onclick="alert('Please login to purchase the product')">Buy Item</button>
+        </div>
+        <div class="card">
+            <h5>Clutch | Queen brown leatherly</h5>
+            <h2>ksh.900</h2>
+            <p>Per bag </p>
+            <h6>Massive discount will be given to people who will order 3 or more</h6>
+            <button  onclick="alert('Please login to purchase the product')">Buy Item</button>
+        </div>
+        <div class="card">
+            <h5>Clutch | Queen pink plain</h5>
+            <h2>ksh.900</h2>
+            <p>Per bag</p>
+            <h6>Massive discount will be given to people who will order 3 or more</h6>
+            <button  onclick="alert('Please login to purchase the product')">Buy Item</button>
+        </div>
+         </div>
+
+         <a href="https://gcloot.com/#/?ref=MARWB8" target="_blank"> 
+         <div class="advert">
+              
+            <div class="log"> <img src="img/gc.png" title="GCLOOT" alt="gcloot logo"></div>
+            <div class="des"><p><strong style="color: blue;">Earn</strong> $3 per day with site. </p><span style="color: rgb(15, 15, 15); font-weight: 800;"> The site is 100% Legit</span></div>  
+            
+        </div>
+    </a> 
+        <style>
+ a{
+  text-decoration: none;
+padding: 1%;
+     }
+a .advert{
+       margin-top: 1%;
+      width: 50vw;
+      height: auto;
+     margin: auto;
+  
+    position: relative;
+   padding: 3%;
+   border-radius: 10px;
+  display: flex;
+    }
+ a .advert  .log{
+       width: 35%;
+       height: 100px;
+       background-color: rgba(109, 109, 189, 0.438);
+       border-radius: 10px;
+
+      }
+      a .advert .log img{
+       width: 90%;
+       height: 100px;
+       animation: pop 1s linear infinite;
+       transition: 10s;
+      }
+      @keyframes pop {
+        0%{
+            scale:1;
+        }
+        50%{
+            scale:1.1;
+        }
+        100%{
+            scale:1;
+        }
+      }
+      a .advert .des{
+      width: auto;
+        height: 100px;
+         background-color: rgba(182, 187, 221, 0.199);
+         margin-left: 1%;
+         text-align: center;
+         align-items: center;
+         border-radius: 10px;
+                }
+
+        </style>
+    <!--Testmonial Start-->
+
+    <div class="testmonial">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+  
+
+
+        <div class="head">
+            <h6>testmonial</h6>
+            <h3>Clients feedback</h3>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="cards">
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/j.jpg" alt="" class="c_img" >
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Jane</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">Delivered on time</p>
+                    <h6 class="c_sub">Clutch | Queen pink spotted</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/i.jpg" alt="" class="c_img" >
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Ivy</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">Got what i wanted thanks!</p>
+                    <h6>Clutch | Queen pink plain</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/e.jpg" alt="" class="c_img">
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Eva</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">They are fast and reliabe when needed</p>
+                    <h6>Clutch | Queen black spotted</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/n.jpg" alt="" class="c_img">
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Nancy</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">Great customer care 👍</p>
+                    <h6>Clutch | Queen black spotted</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/i.jpg" alt="" class="c_img">
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Immaculate</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">Quality products</p>
+                    <h6>Clutch | Queen brown leatherly</h6>
+                </div>
+             </div>
+             <div class="card">
+                <div class="img_bx">
+                    <img src="img/testmo/g.jpg" alt="" class="c_img">
+                </div>
+                <div class="content">
+                    <div class="h5_star">
+                        <h5 class="c_title">Grace</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+                    <p class="c_subtitle">Delivered as expected</p>
+                    <h6>Clutch | Queen white plain</h6>
+                </div>
+             </div>
+        
+        </div>
+         
+            
+            
+        <div class="change_data">
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+            <h6 class="change_d"></h6>
+        </div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+    
+    <div class="client_data">
+        <div class="cards">
+            <div class="card">
+                <i class="bi bi-check-circle"></i>
+                <div class="cont">
+                    <h6>30+</h6>
+                    <p>Items bought</p>
+                </div>
+            </div>    
+            <div class="card">
+                <i class="bi bi-people"></i>
+                <div class="cont">
+                    <h6>10+</h6>
+                    <p>Clients Active</p>
+                </div>
+            </div>    
+            <div class="card">
+                <i class="bi bi-shield-check"></i>
+                <div class="cont">
+                    <h6>6+</h6>
+                    <p>Active orders</p>
+                </div>
+            </div>    
+            <div class="card">
+                <i class="bi bi-diagram-3-fill"></i>
+                <div class="cont">
+                    <h6>5+</h6>
+                    <p>Team members</p>
+                </div>
+            </div>    
+            <div class="card">
+                <i class="bi bi-people-fill"></i>
+                <div class="cont">
+                    <h6>20+</h6>
+                    <p>Fixed Clients</p>
+                </div>
+            </div>  
+        </div>   
+    </div>
+
+ <div class="mind_bx">
+        <div class="card">
+            <div class="cont">
+            <h4>Do you have any questions reagrding our products</h4>
+            <div class="spans">
+            <span></span><span></span><span></span>
+            </div>
+            <p>We are always ready to receive any ideas and opnions. Please login to submit your opinion </p>
+            </div>
+            
+            <div class="btn">
+        <button  onclick="alert('Please login to send the message')">Inform Us</button>
+            </div>
+        </div>
+         </div>
+        </div>
+        
+        
+        <footer id="contact">
+            <h6>Beauty<span>corner</span></h6>
+            <div class="social">
+                <a href="https://www.facebook.com/people/Madece-Services/100086433886532/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                
+                <a href="">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+
+                
+            </div>
+            <h4>madeceservices254@gmail.com</h4>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#exp">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
